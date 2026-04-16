@@ -32,7 +32,7 @@ jobs:
           AWS_DEFAULT_REGION: auto
 
       - name: Build Quartz
-        run: npx quartz build
+        run: npx quartz build --directory content/Publish
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
