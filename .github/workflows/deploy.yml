@@ -2,8 +2,8 @@ name: Deploy Quartz
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # 毎朝9時JSTは0時UTC
-  workflow_dispatch:  # 手動実行も可能
+    - cron: "0 9 * * *" # 毎朝9時JSTは0時UTC
+  workflow_dispatch: # 手動実行も可能
 
 jobs:
   deploy:
