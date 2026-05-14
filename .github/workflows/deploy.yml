@@ -35,7 +35,7 @@ jobs:
         run: npx quartz build --directory content/Publish
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           command: pages deploy public --project-name=obsidian-publish
